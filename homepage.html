@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Zoopla.co.uk</title>
+  </head>
+  <body class="bg-slate-200">
+    <header id="navbarRender"></header>
+    <main class="m-auto w-[90%]">
+      <!-- <div 
+    class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center m-auto h-[31.25rem] object-cover mt-10"
+    style="background-image: url('./image/hero-homepage.png'); "
+    >
+    <div class="text-white">
+      <h1 class="mb-4 text-4xl font-semibold">We know what a home is really worth</h1>
+      <h3 class="mb-6 text-xl font-semibold">Find home to buy or rent</h3>
+      <form action="">
+        
+      </form>
+    </div>
+    </div> -->
+      <!-- Hero section -->
+      <div
+        class="relative overflow-hidden rounded-lg p-12 text-center m-auto h-[480px] mt-10"
+      >
+        <div
+          class="absolute inset-0 bg-cover bg-center before:absolute before:inset-0 before:bg-cover before:bg-center before:opacity-70 before:bg-[url('./image/hero-homepage.png')]"
+        ></div>
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white top-[150px]">
+          <h1 class="mb-4 text-4xl font-bold">
+            We know what a home is really worth
+          </h1>
+          <h3 class="mb-6 text-xl font-semibold">Find home to buy or rent</h3>
+          <div class="w-[60%] h-auto bg-slate-100 m-auto rounded-xl">
+            <div class="flex justify-center">
+              <button
+                class="border-b-2 border-violet-700 bg-violet-500 px-2 py-1"
+              >
+                For sale
+              </button>
+              <button
+                class="text-slate-800 px-2 py-1 border-b-2 border-transparent"
+              >
+                For sale
+              </button>
+            </div>
+            <hr />
+            <form action="" class="text-slate-800 relative left-[2px] mt-3">
+              <label class="block mr-[450px]" for="location"
+                >Enter a location</label
+              >
+              <input
+                type="text"
+                placeholder="Search...."
+                id="location"
+                class="border-2 py-1 pl-[5px] w-[480px] rounded-md"
+              />
+              <button
+                class="bg-violet-500 py-1 px-[5px] text-white mb-6 rounded-md"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Section 1 -->
+      <section class="mt-10">
+        <div
+          class="flex bg-violet-300 p-8 justify-between items-center rounded-xl"
+        >
+          <div class="flex flex-col gap-5">
+            <h1 class="text-2xl font-bold">Know the facts about a property</h1>
+            <p class="text-wrap w-[400px]">
+              Uncover nearby planning applications, flood risk, enviromental
+              impact, local crime rates, and much more.
+            </p>
+            <a href="">
+              <button class="border-[1.5px] px-2 py-[7px] border-black rounded-lg">
+                Get a Home Check
+              </button>
+            </a>
+          </div>
+          <img
+            class="w-[400px] rounded-xl"
+            src="./image/home-check.jpg"
+            alt="home check pic"
+          />
+        </div>
+      </section>
+      <section class="mt-10 px-8 flex justify-between items-center">
+        <div>
+          <img
+            class="w-[560px] h-auto object-cover"
+            src="./image/instant-valuati1.jpg"
+            alt="instant valuation pic"
+          />
+        </div>
+        <div class="flex flex-col gap-5">
+          <h1 class="font-bold text-2xl">Value your home</h1>
+          <p>Get an instant online valuation to see what it's worth</p>
+          <a href="">
+            <button class="border-[1.5px] px-2 py-[7px] border-black">
+              Get an instant valuation
+            </button>
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="flex justify-between">
+          <h1 class="font-bold text-2xl mt-10 mb-5">
+            Discover towns and cities
+          </h1>
+          <a href="">
+            <p class="underline mt-[46px]">Explore more towns and others</p>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <button class="bg-violet-900 px-2 py-1 rounded-[3px] text-white">
+              For sale
+            </button>
+          </a>
+          <a href="">
+            <button>To rent</button>
+          </a>
+        </div>
+        <div class="flex justify-between">
+          <div class="bg-violet-300 w-[360px] px-5 py-8 rounded-xl mt-7">
+            <div class="flex">
+              <i
+                class="fa-solid fa-building text-[30px] p-2 text-violet-500 bg-pink-300 rounded-sm"
+              ></i>
+              <div class="ml-5">
+                <p class="font-medium">In the city</p>
+                <small>Live among the hustle</small>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class="flex mt-3">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">London properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Leeds properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Edinburgh properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Mancherter properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Liverpool properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Cardiff properties for sale</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-yellow-100 w-[360px] px-5 py-8 rounded-xl mt-7">
+            <div class="flex">
+              <i
+                class="fa-solid fa-house text-[30px] p-2 text-violet-500 bg-green-200 rounded-sm"
+              ></i>
+              <div class="ml-5">
+                <p class="font-medium">Rural and countryside</p>
+                <small>Enjoy Living close</small>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class="flex mt-3">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Leicester properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Northanmton properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Kent properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Cornwall properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Essex properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Devon properties for sale</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-pink-300 w-[360px] px-5 py-8 rounded-xl mt-7">
+            <div class="flex">
+              <i
+                class="fa-solid fa-house text-[30px] p-2 text-violet-500 bg-orange-200 rounded-sm"
+              ></i>
+              <div class="ml-5">
+                <p class="font-medium">Popular location</p>
+                <small>Move to a property hotspot</small>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div class="flex mt-3">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Glasgow properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Birmingham properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Nottingham properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Sheffield properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Coventry properties for sale</a>
+                </p>
+              </div>
+              <div class="flex">
+                <i
+                  class="fa-solid fa-arrow-right text-[9px] flex justify-center items-center mt-1 mr-1"
+                ></i>
+                <p class="underline text-[14px]">
+                  <a href="">Stroke-on-Trent properties for sale</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id = "footerRender"></footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

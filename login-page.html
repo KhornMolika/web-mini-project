@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Zoopla.co.uk</title>
+</head>
+<body class="bg-slate-200">
+  <header id="navbarRender"></header>
+
+  <main class="h-[500px] flex justify-center items-center mt-1">
+    <section
+      class="w-[380px] py-5 mx-auto bg-slate-100 flex flex-col items-center h-auto justify-center rounded-md"
+    >
+      <h1 class="font-medium text-violet-700 text-[20px]">Login</h1>
+      <form action="" class="flex flex-col justify-center">
+        <label for="email" class="block">Email address</label>
+        <input
+          class="px-2 py-2 border-[1px] rounded-[2px] w-[300px] border-black"
+          type="text"
+          id="email"
+          placeholder="email"
+        />
+        <label for="password" class="block">Password</label>
+        <input
+          class="px-2 py-2 border-[1px] rounded-[2px] w-[300px] border-black"
+          type="text"
+          id="password"
+          placeholder="password"
+        />
+        <i
+          class="fa-solid fa-eye-slash relative left-[270px] bottom-[28px] cursor-pointer"
+        ></i>
+        <button
+          class="bg-violet-900 w-[300px] block mt-1 mb-2 px-1 py-2 text-white font-semibold rounded-[3px]"
+        >
+          Login
+        </button>
+      </form>
+      <div class="flex justify-center items-center flex-col">
+        <p class="text-[13px]">
+          Don't have an account?
+          <a href="sign-up-page.html"><span class="border-b-2 border-violet-700">Sign up</span></a>
+        </p>
+        <small class="font-medium text-[13px]">or</small>
+        <button
+          class="font-medium border-2 border-violet-900 w-[300px] mt-2 py-2 rounded-[3px] hover:bg-violet-900 hover:text-white"
+        >
+          <i class="fa-brands fa-google text-[13px] mr-"></i> Google
+        </button>
+        <button
+          class="font-medium border-2 border-violet-900 w-[300px] mt-1 py-2 rounded-[3px] hover:bg-violet-900 hover:text-white"
+        >
+          <i class="fa-brands fa-facebook-f text-[13px]"></i> Facebook
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer id = "footerRender"></footer>
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
